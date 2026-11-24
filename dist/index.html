@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tidly Notebook — Tek-Dosya Kişisel ve Mesleki Wiki</title>
+  <style>
+    :root { --bg:#F3EFE6; --surface:#FAF8F3; --surface2:#ECE6D9; --ink:#1F1C18; --muted:#5C554B; --border:#DDD5C7; --accent:#B8432E; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:"Segoe UI",system-ui,sans-serif; background:var(--bg); color:var(--ink); line-height:1.6; }
+    .wrap { max-width:1040px; margin:0 auto; padding:36px 20px 64px; }
+    header { border-bottom:1px solid var(--border); padding-bottom:24px; margin-bottom:28px; }
+    .eyebrow { font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:0.06em; color:var(--accent); margin-bottom:6px; }
+    h1 { margin:0 0 10px; font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif; font-size:clamp(1.9rem,4vw,2.75rem); line-height:1.15; letter-spacing:-0.02em; }
+    .lead { margin:0; max-width:680px; color:var(--muted); font-size:1.05rem; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px; }
+    .ed-card { background:var(--surface); border:1px solid var(--border); border-top:4px solid var(--accent); border-radius:10px; padding:18px; display:flex; flex-direction:column; gap:10px; box-shadow:0 1px 2px rgba(20,16,10,0.04); }
+    .ed-head { display:flex; align-items:center; justify-content:space-between; gap:8px; }
+    .ed-head h2 { margin:0; font-family:"Iowan Old Style",Georgia,serif; font-size:1.25rem; }
+    .ed-badge { font-size:0.75rem; font-weight:600; padding:3px 9px; border-radius:999px; background:var(--surface2); border:1px solid var(--border); }
+    .ed-desc { margin:0; color:var(--muted); font-size:0.93rem; }
+    .ed-meta { font-size:0.8rem; color:var(--muted); }
+    code { font-family:Consolas,monospace; background:var(--surface2); padding:2px 5px; border-radius:4px; }
+    .ed-actions { display:flex; flex-wrap:wrap; gap:8px; margin-top:auto; padding-top:6px; }
+    .btn { display:inline-flex; align-items:center; justify-content:center; min-height:38px; padding:7px 13px; border-radius:6px; border:1px solid var(--border); background:var(--surface); color:var(--ink); text-decoration:none; font-size:0.875rem; font-weight:600; }
+    .btn:hover { background:var(--surface2); border-color:var(--muted); }
+    .btn-primary { background:var(--accent); border-color:var(--accent); color:#FFFFFF; }
+    .btn-primary:hover { filter:brightness(0.92); background:var(--accent); border-color:var(--accent); }
+    .facts { margin-top:32px; background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:20px; }
+    .facts h3 { margin:0 0 10px; font-family:"Iowan Old Style",Georgia,serif; font-size:1.2rem; }
+    .facts ul { margin:0; padding-left:1.3em; display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:6px 20px; color:var(--muted); font-size:0.92rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Sıfır Sunucu · Çevrimdışı · Tek HTML Dosyası</div>
+      <h1>Tidly Notebook</h1>
+      <p class="lead">TiddlyWiki5 ruhunda, tüm notlarını, ekli materyallerini ve şablonlarını tek bir taşınabilir <code>.html</code> dosyasında saklayan kişisel ve mesleki bilgi defteri.</p>
+    </header>
+    <section class="grid">
+<article class="ed-card" style="border-top-color:#B8432E;">
+  <div class="ed-head">
+    <h2>Genel / Standart</h2>
+    <span class="ed-badge">Varsayılan</span>
+  </div>
+  <p class="ed-desc">Klasik kişisel wiki: bağlantılar, iç içe gömme, dinamik filtreler ve özgür kart düzeni.</p>
+  <div class="ed-meta">Dosya: <code>tidly-notebook.html</code></div>
+  <div class="ed-actions">
+    <a class="btn btn-primary" href="./tidly-notebook.html">Tarayıcıda Aç</a>
+    <a class="btn" href="./tidly-notebook.html" download="tidly-notebook.html">Tek Dosya İndir</a>
+  </div>
+</article>
+<article class="ed-card" style="border-top-color:#1F6B48;">
+  <div class="ed-head">
+    <h2>Öğretmen</h2>
+    <span class="ed-badge">Sınıf &amp; Ders</span>
+  </div>
+  <p class="ed-desc">Ders planları, PDF/Word ders materyali ekleme, ödev takibi ve otomatik ortalamalı not çizelgesi.</p>
+  <div class="ed-meta">Dosya: <code>tidly-ogretmen.html</code></div>
+  <div class="ed-actions">
+    <a class="btn btn-primary" href="./tidly-ogretmen.html">Tarayıcıda Aç</a>
+    <a class="btn" href="./tidly-ogretmen.html" download="tidly-ogretmen.html">Tek Dosya İndir</a>
+  </div>
+</article>
+<article class="ed-card" style="border-top-color:#145D8B;">
+  <div class="ed-head">
+    <h2>Doktor</h2>
+    <span class="ed-badge">Klinik &amp; Vaka</span>
+  </div>
+  <p class="ed-desc">SOAP vaka şablonları, tedavi protokolleri, offline VKİ/doz hesaplayıcı ve parola şifreleme rehberi.</p>
+  <div class="ed-meta">Dosya: <code>tidly-doktor.html</code></div>
+  <div class="ed-actions">
+    <a class="btn btn-primary" href="./tidly-doktor.html">Tarayıcıda Aç</a>
+    <a class="btn" href="./tidly-doktor.html" download="tidly-doktor.html">Tek Dosya İndir</a>
+  </div>
+</article>
+<article class="ed-card" style="border-top-color:#8C4A1C;">
+  <div class="ed-head">
+    <h2>Aşçı</h2>
+    <span class="ed-badge">Tarif &amp; Mutfak</span>
+  </div>
+  <p class="ed-desc">Porsiyon ölçekleyen akıllı tarifler, tek tıkla alışveriş listesi aktarımı ve mutfak zamanlayıcıları.</p>
+  <div class="ed-meta">Dosya: <code>tidly-asci.html</code></div>
+  <div class="ed-actions">
+    <a class="btn btn-primary" href="./tidly-asci.html">Tarayıcıda Aç</a>
+    <a class="btn" href="./tidly-asci.html" download="tidly-asci.html">Tek Dosya İndir</a>
+  </div>
+</article>
+<article class="ed-card" style="border-top-color:#B8432E;">
+  <div class="ed-head">
+    <h2>Öğrenci</h2>
+    <span class="ed-badge">Ders &amp; Sınav</span>
+  </div>
+  <p class="ed-desc">Cornell yöntemiyle ders notu şablonu, Pomodoro çalışma sayacı ve konu tekrar takibi.</p>
+  <div class="ed-meta">Dosya: <code>tidly-ogrenci.html</code></div>
+  <div class="ed-actions">
+    <a class="btn btn-primary" href="./tidly-ogrenci.html">Tarayıcıda Aç</a>
+    <a class="btn" href="./tidly-ogrenci.html" download="tidly-ogrenci.html">Tek Dosya İndir</a>
+  </div>
+</article>
+    </section>
+    <section class="facts">
+      <h3>Neden Tek Dosya?</h3>
+      <ul>
+        <li>Kurulum, hesap veya bulut veritabanı gerekmez; tek <code>.html</code> dosyasını tarayıcıda açmak yeterlidir.</li>
+        <li><code>[[Bağlantı]]</code>, <code>{{İç İçe Gömme}}</code>, dinamik filtre dili ve bağlantı grafiği yerleşiktir.</li>
+        <li>Kartlara PDF, Word, Excel, görsel, ses (maks. 5 MB) ve Türkçe Excel <code>.csv</code> tabloları gömülebilir.</li>
+        <li>İsteğe bağlı <code>AES-256-GCM</code> parola şifreleme ve IndexedDB yerel otomatik yedekleme içerir.</li>
+      </ul>
+    </section>
+  </div>
+</body>
+</html>

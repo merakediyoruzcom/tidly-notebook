@@ -1,0 +1,20 @@
+{
+  "name": "tidly-notebook",
+  "version": "1.0.0",
+  "description": "Single-file, offline-first, mobile-friendly personal wiki inspired by TiddlyWiki5",
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.js",
+    "dev": "node dev-server.mjs"
+  },
+  "keywords": [
+    "wiki",
+    "tiddlywiki",
+    "single-file",
+    "offline",
+    "notebook",
+    "pkm"
+  ],
+  "license": "MIT"
+}
